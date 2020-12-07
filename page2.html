@@ -14,12 +14,15 @@
         var tboolean = true;
         var tnull = null; 
         var tundefine = undefined;
-        var tarray = ['test', 30, [5, 6, 7]];
-        var tobject = {'first': 'Lauren'};
+        var tarray = ["Test", 30, [5, 6, 7]];
+        var tobject = {"first": "Obi", "middle": "Wan", "last": "kenoby"};
         var tobject2 = {};
         var tobject3 = {'arr2': tarray};
         //var funobj = {sayhello(){return 'hello';}};
         //console.log(tobject3.arr2[2][0]);
+        var tobject_string = JSON.stringify(tobject);
+        var strto_obj = JSON.parse(tobject_string);
+        
     </script>
 
 </body>

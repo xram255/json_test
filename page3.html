@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Parse Values</h2>
+    <div id="addbutton">Press Here</div>
+    <div id="seebutton">Press Here Also</div>
+    <input type="text" id="firstName">
+    <script>
+        document.getElementById('addbutton').addEventListener('click',addToStorage);
+        document.getElementById('seebutton').addEventListener('click',viewStorage);
+        function addToStorage()
+        {
+            let temp_value = document.getElementById('firstName').value;
+            console.log('first name:' + temp_value);
+            
+        }
+        function viewStorage()
+        {
+            console.log("clicked")
+        }
+    </script>
+</body>
+</html>
